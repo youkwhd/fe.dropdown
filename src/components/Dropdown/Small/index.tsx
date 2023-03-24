@@ -4,7 +4,7 @@ export default (): JSX.Element => {
     return (
         <ul className="dropdown__menu dropdown__menu__small">
             <li>
-                <Link href="/">Skate</Link>
+                <Link href="/">Skate Be Pray</Link>
             </li>
             <li>
                 <Link href="/">Basket</Link>

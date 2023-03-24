@@ -1,18 +1,22 @@
 import Link from "next/link"
+import { BiChevronDown } from "react-icons/bi"
 
 import Large from "@/components/Dropdown/Large"
 import Small from "@/components/Dropdown/Small"
 
-const Dropdown = ({ DropdownType }: { DropdownType: React.ReactNode }): JSX.Element => {
+const Dropdown = ({ Type, title }: { Type: React.ReactNode, title: string }): JSX.Element => {
     return (
         <li className="dropdown">
-            <Link href="/">Products</Link>
-            {DropdownType}
+            <Link href="/">
+                <span>{title}</span>
+                <BiChevronDown />
+            </Link>
+            {Type}
         </li>
     )
 }
 
 export default {
-    "Large": () => <Dropdown DropdownType={<Large />} />,
-    "Small": () => <Dropdown DropdownType={<Small />} />
+    "Large": ({ title }: { title: string }) => <Dropdown Type={<Large />} title={title} />,
+    "Small": ({ title }: { title: string }) => <Dropdown Type={<Small />} title={title} />
 }
