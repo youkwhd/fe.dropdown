@@ -36,14 +36,6 @@ header {
     margin: 20px 0;
 }
 
-.dropdown > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-block: 20px;
-}
-
 .dropdown__menu {
     display: none;
 
@@ -51,14 +43,25 @@ header {
 
     padding: 5px;
     position: absolute;
-    background-color: cornflowerblue;
+    background-color: white;
+    border: 1px solid black;
+    border-top: 2px solid blue;
 }
 
 .dropdown__menu li {
     margin: 10px;
 }
 
+.dropdown__title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 20px;
+}
+
 .dropdown__menu:hover,
-.dropdown a:hover ~ .dropdown__menu {
+.dropdown__title:hover ~ .dropdown__menu {
     display: block;
 }

@@ -7,10 +7,10 @@ import Small from "@/components/Dropdown/Small"
 const Dropdown = ({ Type, title }: { Type: React.ReactNode, title: string }): JSX.Element => {
     return (
         <li className="dropdown">
-            <Link href="/">
+            <div className="dropdown__title">
                 <span>{title}</span>
                 <BiChevronDown />
-            </Link>
+            </div>
             {Type}
         </li>
     )
