@@ -17,6 +17,8 @@ const Dropdown = ({ Type, title }: { Type: React.ReactNode, title: string }): JS
 }
 
 export default {
-    "Large": ({ title }: { title: string }) => <Dropdown Type={<Large />} title={title} />,
-    "Small": ({ title }: { title: string }) => <Dropdown Type={<Small />} title={title} />
+    "Large": ({ title, NavLinks }: { title: string, NavLinks: React.ReactNode[] }) => 
+        <Dropdown Type={<Large NavLinks={NavLinks} />} title={title} />,
+    "Small": ({ title, NavLinks }: { title: string, NavLinks: React.ReactNode[] }) => 
+        <Dropdown Type={<Small NavLinks={NavLinks} />} title={title} />
 }

@@ -37,11 +37,11 @@ header {
 }
 
 .dropdown > a {
-    min-height: 50px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-block: 20px;
 }
 
 .dropdown__menu {
@@ -51,7 +51,7 @@ header {
 
     padding: 5px;
     position: absolute;
-    background-color: grey;
+    background-color: cornflowerblue;
 }
 
 .dropdown__menu li {

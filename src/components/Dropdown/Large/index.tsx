@@ -1,5 +1,4 @@
-
-export default (): JSX.Element => {
+export default ({ NavLinks }: { NavLinks: React.ReactNode[] }): JSX.Element => {
     return (
         <></>
     )
